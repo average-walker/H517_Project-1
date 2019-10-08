@@ -1,4 +1,0 @@
-Arrow functions:
-https://wesbos.com/arrow-functions/
-
-https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
