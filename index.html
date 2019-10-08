@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Walker_project 1</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <div class="mapContainer">
+          <header class="mapHeader">
+              <h2>Map of Cholera Deaths in London</h2>
+              <div><button>Reset</button></div>
+          </header>
+          <svg class="map"></svg>
+          <div class="legend">
+            <div class="pumpLabel">Pumps</div>
+            <div class="maleLabel">Male Deaths</div>
+            <div class="femaleLabel">Female Deaths</div>
+          </div>
+          <div class="tooltip"></div>
+        </div>
+        <div class="timelineConatainer">
+          <svg class="timeline"></svg>
+          <div class="graphContainer">
+            <svg class="genderGraph"></svg>
+            <svg class="ageGraph"></svg>
+          </div>
+        </div>
+      </main>
+      <div class = "instructions">
+
+        <h3>Instructions</h3>
+        <p>Click to select or deselect single or combinations of variables. All selected variables will appear black.</p>
+
+        <h3>Details</h3>
+        <ul>
+          <li>
+            This visualization is a modernized version of <a href = "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak"> Dr. John Snow's map of London's 1854 cholera epidemic</a>
+          </li>
+          <li><a href="Documentation.html"> Visualization documentation and references</a></li>
+          <li><a href="https://youtu.be/byJvju7vSdU">Video walkthrough of the visualization</a></li>
+        </ul>
+      </div>
+
+      <script src="js/d3_3.0.6.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>
