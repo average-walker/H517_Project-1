@@ -27,15 +27,16 @@ d3.csv("data/deaths_age_sex_date.csv", function(res) {
 });
 
 function drawMap() {
-  const width = 20;
-  const height = 19;
-
-  const map = d3.select(".map")
-    .attr("width", offset(width))
-    .attr("height", offset(height));
-  const streets = map.append("g");
-  const pumps = map.append("g");
-  map.append("g").attr("id", "deaths");
+  const map = d3.select(".map")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .call(d3.behavior.zoom().on("zoom", function () {
+      map.attr("transform", `translate(${d3.event.translate}) scale(${d3.event.scale})`)
+    }))
+    .append("g");
+  const streets = map.append("g");
+  const pumps = map.append("g");
+  map.append("g").attr("id", "deaths");
 
   d3.select("button").on("click", reset);
 

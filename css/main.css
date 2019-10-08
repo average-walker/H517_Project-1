@@ -20,7 +20,8 @@ main {
 }
 
 .instructions {
-  margin: 0 auto;
+  background-color: white;
+  margin: 60px auto;
   max-width: 700px  ;
 }
 
